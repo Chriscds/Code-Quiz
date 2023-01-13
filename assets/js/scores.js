@@ -1,0 +1,1 @@
+// localStorage for scores and initials.
