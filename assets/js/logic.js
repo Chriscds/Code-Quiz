@@ -19,9 +19,6 @@ function startQuiz() {
     // start timer
     startTimer();
 }
-
-    // #start-screen is hidden and #start button removed.
-
     // fuction to hide #start button and #start-screen
 function hideStartScreen() {
     startPage.style.display = 'none';
