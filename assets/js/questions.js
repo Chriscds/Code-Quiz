@@ -1,5 +1,5 @@
 let questionTitle = document.querySelector("#question-title");
-let answerChoices = document.querySelector("#choices");
+let answerChoices = document.querySelector("#li-questions");
 // Quiz questions
 let quizQuestions = [{
 
@@ -44,6 +44,22 @@ let quizQuestions = [{
         ],
 
 }];
+
+// function shownQuestions() {
+//     alert("The first question will be coming soon!!!!")
+// }
+
+function beginQuestions() {
+
+    for (var i= 0; i < quizQuestions.length; i++) {
+        alert(quizQuestions[i].question)
+
+        // let title = document.createElement("title");
+        // title.textContent = quizQuestions[i].question[0];
+
+        // questionTitle.appendChild(title);
+    }
+}
 
     // 1. Which is correct about the Javascript language?
         // answer: is an object-based language (true)

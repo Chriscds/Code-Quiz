@@ -8,7 +8,7 @@ let startButton = document.querySelector('#start');
 let timerElement = document.querySelector('#time');
 
 let timer;
-// let timeCounter;
+// Initialise time to 75 seconds;
 let timeCounter = 75;
 
 // When start button is clicked,
@@ -17,7 +17,9 @@ function startQuiz() {
     // hides start-screen page and button.
     hideStartScreen()
     // start timer
-    startTimer();
+    startTimer()
+    // shownQuestions();
+    beginQuestions()
 }
     // fuction to hide #start button and #start-screen
 function hideStartScreen() {
@@ -38,6 +40,9 @@ function startTimer() {
     }, 1000);
 }
 
+// function shownQuestions() {
+//     alert(questionTitle = quizQuestions[i][0])
+// }
     // 1st question appears.
 
         // when first question is answered
