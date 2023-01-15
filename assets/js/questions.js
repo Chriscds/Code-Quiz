@@ -1,3 +1,4 @@
+let showQuestions = document.querySelector("#questions");
 let questionTitle = document.querySelector("#question-title");
 let answerChoices = document.querySelector("#li-questions");
 // Quiz questions
@@ -45,22 +46,31 @@ let quizQuestions = [{
 
 }];
 
-// function shownQuestions() {
-//     alert("The first question will be coming soon!!!!")
-// }
+
 
 function beginQuestions() {
+    let test = document.createElement(quizQuestions.question);
 
-    for (var i= 0; i < quizQuestions.length; i++) {
-        alert(quizQuestions[i].question)
-
-        // let title = document.createElement("title");
-        // title.textContent = quizQuestions[i].question[0];
-
-        // questionTitle.appendChild(title);
-    }
+    // test.textContent = questionTitle + " Is this working?";
+    test.textContent = quizQuestions[0].question;
+    document.body.appendChild(test);
+    // questionTitle.push(test); ??????
 }
 
+// First attempt ----------------------------------------------------------------
+/* -------------------------------- 
+    // for (var i= 0; i < quizQuestions.length; i++) {
+    //     alert(quizQuestions[i].question)
+    // showQuestions.style.visibility = "visible";
+
+    //     let title = document.createElement("title");
+    //     // let title = document.createElement(questionTitle);
+    //     title.textContent = quizQuestions.answers[0][1];
+
+    //     questionTitle.push(title);
+    // }
+
+*/ 
     // 1. Which is correct about the Javascript language?
         // answer: is an object-based language (true)
         // answer: is Assembly-language
