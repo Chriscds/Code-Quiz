@@ -1,6 +1,8 @@
 let showQuestions = document.querySelector("#questions");
 let questionTitle = document.querySelector("#question-title");
 let answerChoices = document.querySelector("#li-questions");
+
+// TODO: Check if this is the best method to write the Q&A's
 // Quiz questions
 let quizQuestions = [{
 
@@ -46,7 +48,7 @@ let quizQuestions = [{
 
 }];
 
-
+// TODO: finish writing function to push question 1 to question-title on html page.
 
 function beginQuestions() {
     let test = document.createElement(quizQuestions.question);
