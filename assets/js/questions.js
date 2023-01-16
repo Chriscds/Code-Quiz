@@ -1,5 +1,6 @@
 let showQuestions = document.querySelector("#questions");
-let questionTitle = document.querySelector("#question-title");
+// let questionTitle = document.querySelector("#question-title");
+let questionTitle = document.getElementById("#question-title");
 let answerChoices = document.querySelector("#li-questions");
 
 // TODO: Check if this is the best method to write the Q&A's
@@ -53,13 +54,22 @@ let quizQuestions = [{
 
 // TODO: finish writing function to push question 1 to question-title on html page.
 
-function beginQuestions() {
-    let test = document.createElement(quizQuestions.question);
+function beginQuestions(questionTitle) {
+    // let test = document.createElement(quizQuestions.question);
+    
+    questionTitle = document.createElement('question-title');
+    // can set which question.
+    questionTitle.innerText = quizQuestions[1].question;
+    
 
     // test.textContent = questionTitle + " Is this working?";
-    test.textContent = quizQuestions[0].question;
-    document.body.appendChild(test);
-    // questionTitle.push(test); ??????
+    // test.textContent = quizQuestions[0].question;
+    // document.body.appendChild(test);
+
+    // Adds question to body but not the question itself
+    document.body.appendChild(questionTitle);
+
+    // questionTitle.push('question-title'); 
 }
 
 // First attempt ----------------------------------------------------------------
