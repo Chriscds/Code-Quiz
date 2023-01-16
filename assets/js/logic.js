@@ -19,7 +19,8 @@ function startQuiz() {
     // start timer
     startTimer()
     // shownQuestions();
-    beginQuestions()
+    // beginQuestions()
+    questionTitle, beginQuestions()
 }
     // fuction to hide #start button and #start-screen
 function hideStartScreen() {

@@ -1,6 +1,5 @@
 let showQuestions = document.querySelector("#questions");
-// let questionTitle = document.querySelector("#question-title");
-let questionTitle = document.getElementById("#question-title");
+let questionTitle = document.querySelector("#question-title");
 let answerChoices = document.querySelector("#li-questions");
 
 // TODO: Check if this is the best method to write the Q&A's
@@ -56,58 +55,15 @@ let quizQuestions = [{
 
 function beginQuestions(questionTitle) {
     // let test = document.createElement(quizQuestions.question);
-    
+
     questionTitle = document.createElement('question-title');
     // can set which question.
-    questionTitle.innerText = quizQuestions[1].question;
+    questionTitle.innerText = quizQuestions[0].question;
     
+   
+  
 
-    // test.textContent = questionTitle + " Is this working?";
-    // test.textContent = quizQuestions[0].question;
-    // document.body.appendChild(test);
-
-    // Adds question to body but not the question itself
+   
     document.body.appendChild(questionTitle);
-
-    // questionTitle.push('question-title'); 
 }
 
-// First attempt ----------------------------------------------------------------
-/* -------------------------------- 
-    // for (var i= 0; i < quizQuestions.length; i++) {
-    //     alert(quizQuestions[i].question)
-    // showQuestions.style.visibility = "visible";
-
-    //     let title = document.createElement("title");
-    //     // let title = document.createElement(questionTitle);
-    //     title.textContent = quizQuestions.answers[0][1];
-
-    //     questionTitle.push(title);
-    // }
-
-*/ 
-    // 1. Which is correct about the Javascript language?
-        // answer: is an object-based language (true)
-        // answer: is Assembly-language
-        // answer: is an Object-Oriented language
-        // answer: is a High-level language
-    // 2. Arrays in JavaScript are defined by which of the following statements?
-        // answer: It is an ordered list of values (true)
-        // answer: It is an ordered list of objects
-        // answer: It is an ordered list of string
-        // answer: It is an ordered list of functions
-    // 3. Which of the following object is the main entry point to all client-side JavaScript features and APIs?
-        // answer: Position
-        // answer: Window (true)
-        // answer: Standard
-        // answer: Location
-    // 4. Which of the following can be used to call a JavaScript Code Snippet?
-        // answer: Function/Method (true)
-        // answer: Preprocessor
-        // answer: Triggering Event
-        // answer: HTML
-    // 5. Which of the following methods/operation does javascript use instead of == and !=?
-        // answer: JavaScript uses equalto()
-        // answer: JavaScript uses equals() and notequals() instead
-        // answer: JavaScript uses bitwise checking
-        // answer: JavaScript uses === and !== instead (true)
