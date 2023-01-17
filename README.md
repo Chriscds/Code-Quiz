@@ -10,7 +10,7 @@ Multiple-choice questioned quiz based on knowledge of coding. This is a timed qu
 ![Javascript Code Quiz]()
 
 ## Usage
-The quiz web application is still in progress of being built with JavaScript. To see its progress[click here](https://chriscds.github.io/Code-Quiz/index.html)
+The quiz web application is still in progress of being built with JavaScript. To see its progress [click here](https://chriscds.github.io/Code-Quiz/index.html)
 
 ## License
 Please refer to the LICENCE in the repository.
