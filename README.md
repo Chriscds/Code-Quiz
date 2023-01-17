@@ -7,7 +7,7 @@ Multiple-choice questioned quiz based on knowledge of coding. This is a timed qu
 * CSS
 
 ## Screenshot
-![Javascript Code Quiz]()
+![Javascript Code Quiz](assets/images/code-quiz-screenshot.png)
 
 ## Usage
 The quiz web application is still in progress of being built with JavaScript. To see its progress [click here](https://chriscds.github.io/Code-Quiz/index.html)
